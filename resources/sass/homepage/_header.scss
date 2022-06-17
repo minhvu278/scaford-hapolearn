@@ -1,5 +1,20 @@
 .navbar-nav {
-  justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin: 0 35px;
+    &:hover {
+        border-radius: 17px;
+        background-color: #B2D235;
+    }
+}
+.nav-link {
+    &:hover {
+        color: white !important;
+    }
+    color: #505353 !important;
+    font-weight: 600;
 }
 
 .example {
