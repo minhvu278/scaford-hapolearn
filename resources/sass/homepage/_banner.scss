@@ -1,3 +1,5 @@
+$main-color: #B2D235;
+
 .banner {
     width: 100%;
     height: 100vh;
@@ -6,10 +8,14 @@
     background-size: contain;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .banner-content {
     margin-left: 40px;
+    position: absolute;
+    bottom: 0;
+    top: 32%;
 }
 
 
@@ -58,4 +64,104 @@
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 35px;
     border: 0;
+    margin-top: 30px;
+}
+
+//Mobile width < 740px;
+@media only screen and (max-width: 376px) {
+    .banner {
+        width: 100%;
+        height: 510px;
+        background-size: contain;
+    }
+;
+    .banner-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        line-height: 27px;
+    }
+
+    .slogan-title {
+        margin-right: 65px;
+    }
+    .banner-img-cu {
+        width: 25.16px;
+        height: 22.83px;
+    }
+    .banner-slogan {
+        margin-top: 80px;
+        font-size: 25px !important;
+        width: 303px;
+    }
+    //.banner-img-cu {
+    //    font-size: 25px !important;
+    //    margin-right: 59px;
+    //}
+    .banner-text {
+        margin-right: 68px;
+    }
+
+    .paragraph {
+        font-size: 14px !important;
+    }
+    //.title-weight {
+    //    margin-right: 77px;
+    //}
+    .banner-button {
+        width: 250px;
+        height: 46.52px;
+        font-size: 18px !important;
+        letter-spacing: -0.0em;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .banner-content {
+        margin-left: 40px;
+        position: absolute;
+        bottom: 0;
+        top: 6%;
+    }
+
+    .banner-heading {
+        width: 308px;
+        height: 41px;
+        line-height: 55px;
+        margin-bottom: -30px;
+
+        .banner-slogan {
+            font-size: 25px;
+            color: #11114E;
+            font-weight: 400;
+        }
+
+        .slogan-title {
+            font-weight: 700;
+        }
+    }
+
+    .banner-text {
+        width: 249px;
+        height: 50px;
+
+        .paragraph {
+            font-size: 16px !important;
+            line-height: 25px;
+            color: #505353;
+            font-weight: 400;
+        }
+    }
+
+    .banner-button {
+        font-size: 16px !important;
+        width: 200px;
+        height: 41px;
+        margin-top: 45px;
+        line-height: 1px;
+    }
+
 }
