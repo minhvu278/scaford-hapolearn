@@ -1,51 +1,41 @@
-$main-color: #B2D235;
-
 .banner {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../../assets/images/banner.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-    position: relative;
+  padding-top: 50%;
+  background-image: url("../../assets/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.banner-content {
-    margin-left: 40px;
-    position: absolute;
-    bottom: 0;
-    top: 32%;
+.position-absolute {
+  bottom: 204px;
+  left: 40px;
 }
-
 
 .banner-heading {
-    width: 460px;
-    height: 145px;
-    line-height: 55px;
-    margin-bottom: -30px;
+  width: 460px;
+  height: 145px;
+  line-height: 55px;
+  margin-bottom: -30px;
 
-    .banner-slogan {
-        font-size: 38px;
-        color: #11114E;
-        font-weight: 400;
-    }
+  .banner-slogan {
+      font-size: 38px;
+      color: #11114E;
+      font-weight: 400;
+  }
 
-    .slogan-title {
-        font-weight: 700;
-    }
+  .slogan-title {
+    font-weight: 700;
+  }
 }
 
-
 .banner-text {
-    width: 249px;
-    height: 50px;
+  width: 249px;
+  height: 50px;
 
-    .paragraph {
-        font-size: 20px;
-        color: #505353;
-        font-weight: 400;
-    }
+  .paragraph {
+    font-size: 20px;
+    color: #505353;
+    font-weight: 400;
+  }
 }
 
 .banner-logo {
@@ -53,95 +43,83 @@ $main-color: #B2D235;
 }
 
 .banner-button {
-    width: 315px;
-    height: 70px;
-    font-family: 'UTM BryantLG';
-    margin-top: 26px;
-    background: #B2D235;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 30px;
-    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 35px;
-    border: 0;
-    margin-top: 30px;
+  width: 315px;
+  height: 70px;
+  font-family: $font-default;
+  background: #B2D235;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 30px;
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  border: 0;
+  margin-top: 30px;
 }
 
-//Mobile width < 740px;
-@media only screen and (max-width: 376px) {
-    .banner {
-        width: 100%;
-        height: 510px;
-        background-size: contain;
-    }
-;
-    .banner-heading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        line-height: 27px;
-    }
+@media only screen and (max-width: 740px) {
 
-    .slogan-title {
-        margin-right: 65px;
-    }
-    .banner-img-cu {
-        width: 25.16px;
-        height: 22.83px;
-    }
-    .banner-slogan {
-        margin-top: 80px;
-        font-size: 25px !important;
-        width: 303px;
-    }
-    //.banner-img-cu {
-    //    font-size: 25px !important;
-    //    margin-right: 59px;
-    //}
-    .banner-text {
-        margin-right: 68px;
-    }
+  .position-absolute {
+    bottom: -240px;
+    left: 87px;
+  }
+  
+  .banner-heading {
+    width: 300px;
+    height: 145px;
+    line-height: 34px;
+  }
+  
+  .banner-heading .banner-slogan {
+    font-size: 25px;
+  }
+  
+  .banner-button {
+    width: 250px;
+    height: 46.42px;
+    font-size: 18px;
+  }
+  
+  .banner-cu {
+    width: 25.16px;
+    height: 22.83px;
+  }
+  
+  .banner-text .paragraph {
+    font-size: 16px;
+  }
 
-    .paragraph {
-        font-size: 14px !important;
-    }
-    //.title-weight {
-    //    margin-right: 77px;
-    //}
-    .banner-button {
-        width: 250px;
-        height: 46.52px;
-        font-size: 18px !important;
-        letter-spacing: -0.0em;
-    }
 }
 
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
-    .banner-content {
-        margin-left: 40px;
-        position: absolute;
-        bottom: 0;
-        top: 6%;
+
+  .banner-content {
+    margin-left: 40px;
+    position: absolute;
+    bottom: 0;
+    top: 6%;
+  }
+
+  .banner-heading {
+    width: 426px;
+    height: 63px;
+    line-height: 45px;
+    margin-bottom: 33px;
+
+    .banner-slogan {
+      font-size: 35px;
+      color: #11114E;
+      font-weight: 400;
     }
 
-    .banner-heading {
-        width: 308px;
-        height: 41px;
-        line-height: 55px;
-        margin-bottom: -30px;
+  .slogan-title {
+      font-weight: 700;
+      margin-top: 58px;
+      margin-bottom: 1rem;
+  }
 
-        .banner-slogan {
-            font-size: 25px;
-            color: #11114E;
-            font-weight: 400;
-        }
-
-        .slogan-title {
-            font-weight: 700;
-        }
+    .position-absolute {
+        bottom: 146px;
+        left: 40px;
     }
 
     .banner-text {
@@ -164,4 +142,5 @@ $main-color: #B2D235;
         line-height: 1px;
     }
 
+}
 }
