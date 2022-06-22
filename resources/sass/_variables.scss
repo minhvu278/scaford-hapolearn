@@ -28,13 +28,10 @@ main {
   min-height: 54vh;
 }
 
-//Font 
+//Font
 @font-face {
-  font-family: UTM BryantLG;
-  src: url("../../assets/fonts/UTM_BryantLG_B.ttf");
-  src: url("../../assets/fonts/UTM_BryantLG.ttf");
-  src: url("../../assets/fonts/utm_bryantlg-webfont.woff");
-  src: url("../../assets/fonts/utm_bryantlg-webfont.woff2");
+    font-family: 'UTM BryantLG';
+    src: url('../../public/fonts/UTM_BryantLG_B.ttf');
+    font-weight: 700;
+    font-style: normal;
 }
-
-$font-default: 'UTM BryantLG';
