@@ -21,6 +21,7 @@
     <main>
         @yield('content')
         @include('layouts.course')
+        @include('layouts.banner_why')
     </main>
     @include('layouts.footer')
 

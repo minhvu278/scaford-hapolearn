@@ -1,0 +1,28 @@
+.banner-why {
+  padding-top: 50%;
+  background-image: url("../../assets/images/banner-grow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.banner-why-heading {
+  margin-left: 120px;
+
+  .heading-why {
+    font-size: 70px;
+    color: #FFF;
+    font-family: 'UTM BryantLG';
+  }
+}
+
+.banner-reason {
+  color: #FFF;
+  font-size: 20px;
+  font-family: 'UTM BryantLG';
+}
+
+.banner-why-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
