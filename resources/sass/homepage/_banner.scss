@@ -1,5 +1,5 @@
 .banner {
-  padding-top: 50%;
+  padding-top: 45.5%;
   background-image: url("../../assets/images/banner.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -17,9 +17,9 @@
   margin-bottom: -30px;
 
   .banner-slogan {
-      font-size: 38px;
-      color: #11114E;
-      font-weight: 400;
+    font-size: 38px;
+    color: #11114E;
+    font-weight: 400;
   }
 
   .slogan-title {
@@ -45,8 +45,8 @@
 .banner-button {
   width: 315px;
   height: 70px;
-  font-family: $font-default;
-  background: #B2D235;
+  font-family: "UTM BryantLG";
+  background: $main-color;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 30px;
@@ -57,7 +57,6 @@
 }
 
 @media only screen and (max-width: 740px) {
-
   .position-absolute {
     bottom: -240px;
     left: 87px;
@@ -87,11 +86,9 @@
   .banner-text .paragraph {
     font-size: 16px;
   }
-
 }
 
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
-
   .banner-content {
     margin-left: 40px;
     position: absolute;
@@ -112,35 +109,34 @@
     }
 
   .slogan-title {
-      font-weight: 700;
-      margin-top: 58px;
-      margin-bottom: 1rem;
+    font-weight: 700;
+    margin-top: 58px;
+    margin-bottom: 1rem;
   }
 
-    .position-absolute {
-        bottom: 146px;
-        left: 40px;
+  .position-absolute {
+    bottom: 146px;
+    left: 40px;
+  }
+
+  .banner-text {
+    width: 249px;
+    height: 50px;
+
+    .paragraph {
+      font-size: 16px !important;
+      line-height: 25px;
+      color: #505353;
+      font-weight: 400;
     }
+  }
 
-    .banner-text {
-        width: 249px;
-        height: 50px;
-
-        .paragraph {
-            font-size: 16px !important;
-            line-height: 25px;
-            color: #505353;
-            font-weight: 400;
-        }
-    }
-
-    .banner-button {
-        font-size: 16px !important;
-        width: 200px;
-        height: 41px;
-        margin-top: 45px;
-        line-height: 1px;
-    }
-
+  .banner-button {
+    font-size: 16px !important;
+    width: 200px;
+    height: 41px;
+    margin-top: 45px;
+    line-height: 1px;
+  }
 }
 }

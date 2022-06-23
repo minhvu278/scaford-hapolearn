@@ -10,7 +10,7 @@
 
 .nav-item:hover {
     border-radius: 17px;
-    background-color: #B2D235;
+    background-color: $main-color;
 }
 
 .nav-link {
@@ -29,13 +29,18 @@
   min-height: 54vh;
 }
 
-@media (max-width: 992px) {
-	// TODO
-}
-
 @media only screen and (max-width: 740px) {
-    .logo-image {
-        width: 150px;
-        height: 26.75px;
-    }
+  .logo-image {
+    width: 150px;
+    height: 26.75px;
+  }
+
+  .banner-heading {
+    height: 110px;
+    line-height: 30px;
+  }
+
+  .col-content {
+    bottom: 40px
+  }
 }

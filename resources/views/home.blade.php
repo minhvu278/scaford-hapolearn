@@ -4,7 +4,7 @@
     <section class="container-fluid position-relative banner">
         <div class="position-absolute">
             <div class="row">
-                <div class="col-4 col-sm">
+                <div class="col-4 col-sm-12 col-content">
                     <div class="banner-heading">
                         <p class="banner-slogan">
                             Learn Anytime, Anywhere
@@ -26,6 +26,7 @@
             </div>
         </div>
     </section>
+    <div class="bg-grey"></div>
 @endsection
 
 
