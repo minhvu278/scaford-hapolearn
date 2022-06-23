@@ -19,8 +19,8 @@
 <body>
     @include('layouts.header')
     <main>
-        @include('layouts.course')
         @yield('content')
+        @include('layouts.course')
     </main>
     @include('layouts.footer')
 
