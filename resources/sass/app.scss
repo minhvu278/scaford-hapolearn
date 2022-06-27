@@ -4,6 +4,10 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Slick
+@import '~slick-carousel/slick/slick.scss';
+@import '~slick-carousel/slick/slick-theme.scss';
+
 // Variables
 @import 'variables';
 
@@ -12,3 +16,4 @@
 @import 'homepage/banner';
 @import 'homepage/course';
 @import 'homepage/banner_why';
+@import 'homepage/feedback';
