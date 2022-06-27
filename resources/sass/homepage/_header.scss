@@ -3,24 +3,23 @@
 }
 
 .nav-item {
-    margin: 0 35px;
-    padding-right: 15px;
-    padding-left: 15px;
+  margin: 0 35px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .nav-item:hover {
-    border-radius: 17px;
-    background-color: #B2D235;
+  border-radius: 17px;
+  background-color: #B2D235;
 }
 
 .nav-link {
-    color: #505353 !important;
-    font-weight: 600;
+  color: #505353 !important;
+  font-weight: 600;
 }
 
 .nav-link:hover {
-    color: white !important;
-
+  color: white !important;
 }
 
 .example {
@@ -29,13 +28,9 @@
   min-height: 54vh;
 }
 
-@media (max-width: 992px) {
-	// TODO
-}
-
 @media only screen and (max-width: 740px) {
-    .logo-image {
-        width: 150px;
-        height: 26.75px;
-    }
+  .logo-image {
+    width: 150px;
+    height: 26.75px;
+  }
 }

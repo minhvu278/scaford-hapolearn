@@ -8,8 +8,8 @@
                     <div class="banner-heading">
                         <p class="banner-slogan">
                             Learn Anytime, Anywhere
-                            <span class="slogan-title">at Hapo Learn <img class="banner-cu"
-                                                                          src="{{ asset('images/cu.png') }}"
+                            <span class="slogan-title">at Hapo Learn <img class="banner-owl"
+                                                                          src="{{ asset('images/owl.png') }}"
                                                                           alt="At Hapo"> !</span>
                         </p>
                     </div>
@@ -27,5 +27,3 @@
         </div>
     </section>
 @endsection
-
-
