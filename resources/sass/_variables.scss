@@ -22,7 +22,18 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+$main-color: #B2D235;
 
 main {
   min-height: 54vh;
 }
+
+//Font
+@font-face {
+    font-family: 'UTM BryantLG';
+    src: url('../../public/fonts/UTM_BryantLG_B.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$main-font: 'UTM BryantLG'
