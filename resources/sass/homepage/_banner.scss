@@ -1,13 +1,8 @@
 .banner {
   padding-top: 45.5%;
-  background-image: url("../../assets/images/banner.png");
+  background-image: url("/images/banner.png");
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.position-absolute {
-  bottom: 204px;
-  left: 40px;
 }
 
 .banner-heading {
@@ -39,7 +34,7 @@
 }
 
 .banner-logo {
-    width: 395px;
+  width: 395px;
 }
 
 .banner-button {
@@ -57,33 +52,30 @@
 }
 
 @media only screen and (max-width: 740px) {
-  .position-absolute {
-    bottom: -240px;
-    left: 87px;
-  }
-  
   .banner-heading {
     width: 300px;
     height: 145px;
     line-height: 34px;
   }
-  
-  .banner-heading .banner-slogan {
+
+  .banner-heading
+  .banner-slogan {
     font-size: 25px;
   }
-  
+
   .banner-button {
     width: 250px;
     height: 46.42px;
     font-size: 18px;
   }
-  
-  .banner-cu {
+
+  .banner-owl {
     width: 25.16px;
     height: 22.83px;
   }
-  
-  .banner-text .paragraph {
+
+  .banner-text
+  .paragraph {
     font-size: 16px;
   }
 }
@@ -108,35 +100,35 @@
       font-weight: 400;
     }
 
-  .slogan-title {
-    font-weight: 700;
-    margin-top: 58px;
-    margin-bottom: 1rem;
-  }
+    .slogan-title {
+      font-weight: 700;
+      margin-top: 58px;
+      margin-bottom: 1rem;
+    }
 
-  .position-absolute {
-    bottom: 146px;
-    left: 40px;
-  }
+    .position-absolute {
+      bottom: 146px;
+      left: 40px;
+    }
 
-  .banner-text {
-    width: 249px;
-    height: 50px;
+    .banner-text {
+      width: 249px;
+      height: 50px;
 
-    .paragraph {
+      .paragraph {
+        font-size: 16px !important;
+        line-height: 25px;
+        color: #505353;
+        font-weight: 400;
+      }
+    }
+
+    .banner-button {
       font-size: 16px !important;
-      line-height: 25px;
-      color: #505353;
-      font-weight: 400;
+      width: 200px;
+      height: 41px;
+      margin-top: 45px;
+      line-height: 1px;
     }
   }
-
-  .banner-button {
-    font-size: 16px !important;
-    width: 200px;
-    height: 41px;
-    margin-top: 45px;
-    line-height: 1px;
-  }
-}
 }
