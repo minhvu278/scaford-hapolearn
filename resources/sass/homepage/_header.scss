@@ -2,12 +2,34 @@
   justify-content: flex-end;
 }
 
-.example {
-  display: flex;
-  align-items: center;
-  min-height: 54vh;
+.nav-item {
+  margin: 0 35px;
+
+  &:hover {
+    border-radius: 17px;
+    background-color: $main-color;
+  }
 }
 
-@media (max-width: 992px) {
-	// TODO
+.nav-link {
+  &:hover {
+    color: white;
+  }
+
+  color: black;
+  font-weight: 600;
+}
+
+@media (max-width: 769px) {
+  .logo-image {
+    width: 224px;
+    height: 50.81px;
+  }
+}
+
+@media (max-width: 376px) {
+  .logo-image {
+    width: 150px;
+    height: 26.75px;
+  }
 }
