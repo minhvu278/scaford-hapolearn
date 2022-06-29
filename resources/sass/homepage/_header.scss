@@ -7,16 +7,16 @@
 
   &:hover {
     border-radius: 17px;
-    background-color: #B2D235;
+    background-color: $main-color;
   }
 }
 
 .nav-link {
   &:hover {
-    color: white !important;
+    color: white;
   }
 
-  color: black !important;
+  color: black;
   font-weight: 600;
 }
 

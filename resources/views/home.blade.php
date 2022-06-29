@@ -3,7 +3,7 @@
     <section class="banner d-flex align-items-center">
         <div class="container-fluid banner-wrap">
             <div class="row banner-heading">
-                <div class="col-lg-5 col-md-6 ml-3 col-sm-12 ">
+                <div class="col-lg-5 col-md-6 ml-3 col-sm-12">
                     <p class="banner-title">Learn Anytime, Anywhere
                         <span class="banner-title title-weight">at HapoLearn
                     <img class="banner-image" src="{{ asset('images/owl.png') }}"
