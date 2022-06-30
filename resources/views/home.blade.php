@@ -7,7 +7,7 @@
                     <p class="banner-title">Learn Anytime, Anywhere
                         <span class="banner-title title-weight">at HapoLearn
                             <img class="banner-image" src="{{ asset('images/owl.png') }}"
-                          alt="HapoLearn Logo"> !
+                         alt="HapoLearn Logo"> !
                         </span>
                     </p>
                     <div class="row">
