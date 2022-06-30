@@ -1,0 +1,48 @@
+.statistic {
+  width: 50%;
+  margin-top: 10px;
+  margin: auto;
+}
+
+.statistic-title {
+  color: black;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  border-bottom: 6px solid $main-color;
+  border-radius: 3px;
+}
+
+.statistic-name,
+.statistic-number {
+  font-size: 60px;
+  font-family: $main-font;
+  text-align: center;
+}
+
+.statistic-number {
+  color: $main-color;
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .statistic-title {
+    font-size: 50px;
+  }
+
+  .statistic-name,
+  .statistic-number {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 739px) {
+  .statistic-title {
+    font-size: 40px;
+  }
+
+  .statistic-name,
+  .statistic-number {
+    font-size: 40px;
+  }
+}
