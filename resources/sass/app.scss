@@ -7,8 +7,14 @@
 // Variables
 @import 'variables';
 
+// Slick
+@import '~slick-carousel/slick/slick.scss';
+@import '~slick-carousel/slick/slick-theme.scss';
+
 // Variables
 @import 'homepage/header';
-@import 'homepage/course';
 @import 'homepage/banner';
+@import 'homepage/course';
+@import 'homepage/why_banner';
+@import 'homepage/feedback';
 

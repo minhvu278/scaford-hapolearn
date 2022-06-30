@@ -7,14 +7,14 @@
                     <p class="banner-title">Learn Anytime, Anywhere
                         <span class="banner-title title-weight">at HapoLearn
                             <img class="banner-image" src="{{ asset('images/owl.png') }}"
-                         alt="HapoLearn Logo"> !
+                                 alt="HapoLearn Logo"> !
                         </span>
                     </p>
                     <div class="row">
                         <p class="col-lg-6 col-md-7 col-sm-3 paragraph">Interactive lessons, "on-the-go"
                             practice, peer support.
                         </p>
-                     </div>
+                    </div>
                     <button class="banner-button"> Start Learning Now!</button>
                 </div>
             </div>
@@ -115,4 +115,154 @@
             </div>
         </div>
     </section>
+    <section class="why-bg mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-7 offset-lg-1 offset-md-0 why-content mt-5">
+                    <div class="row mt-lg-5">
+                        <div class="col-lg-12 col-md-12 offset-lg-0 offset-md-5 col-sm-12">
+                            <h4 class="why-heading">Why HapoLearn?</h4>
+                            <div class="turn-laptop">
+                                <img src="{{ asset('images/turn-laptop.png') }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-list offset-lg-1 mr-md-5 offset-md-5">
+                        <div class="why-item">
+                            <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go" practice, peer support.</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go" practice, peer support.</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go" practice, peer support.</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go" practice, peer support.</span>
+                        </div>
+                        <div class="why-item">
+                            <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go" practice, peer support.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12">
+                    <img src="{{ asset('images/laptop.png') }}" alt="why" class="why-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="feedback d-flex justify-content-center align-items-center">
+        <p class="feedback-title">
+            Feedback
+        </p>
+    </div>
+    <div class="feedback-text d-flex justify-content-center align-items-center">
+        <p class="feedback-content">What other students turned professionals have to say about us after learning with us
+            and reaching their goals</p>
+    </div>
+
+    <div class="container">
+        <div class="row slider">
+            <div class="col-lg-12">
+                <div class="card position-relative arrow-bottom">
+                    <div class="card-body">
+                        <p class="feedback-user">“A wonderful course on how to start. Eddie beautifully conveys all
+                            essentials of a becoming a good Angular developer. Very glad to have taken this course.
+                            Thank you Eddie Bryan.”</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 user">
+                        <img class="img-user" src="{{ asset('images/img-feedback.png')}}" alt="">
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10 info">
+                        <p class="info-name">Do Minh Vu3</p>
+                        <p class="info-language">PHP</p>
+                        <div class="color-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card position-relative arrow-bottom">
+                    <div class="card-body">
+                        <p class="feedback-user">“A wonderful course on how to start. Eddie beautifully conveys all
+                            essentials of a becoming a good Angular developer. Very glad to have taken this course.
+                            Thank you Eddie Bryan.”</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2 user">
+                        <img class="img-user" src="{{ asset('images/img-feedback.png')}}" alt="">
+                    </div>
+                    <div class="col-10 info">
+                        <p class="info-name">Do Minh Vu4</p>
+                        <p class="info-language">PHP</p>
+                        <div class="color-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card position-relative arrow-bottom">
+                    <div class="card-body">
+                        <p class="feedback-user">“A wonderful course on how to start. Eddie beautifully conveys all
+                            essentials of a becoming a good Angular developer. Very glad to have taken this course.
+                            Thank you Eddie Bryan.”</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2 user">
+                        <img class="img-user" src="{{ asset('images/img-feedback.png')}}" alt="">
+                    </div>
+                    <div class="col-10 info">
+                        <p class="info-name">Do Minh Vu4</p>
+                        <p class="info-language">PHP</p>
+                        <div class="color-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card position-relative arrow-bottom">
+                    <div class="card-body">
+                        <p class="feedback-user">“A wonderful course on how to start. Eddie beautifully conveys all
+                            essentials of a becoming a good Angular developer. Very glad to have taken this course.
+                            Thank you Eddie Bryan.”</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2 user">
+                        <img class="img-user" src="{{ asset('images/img-feedback.png')}}" alt="">
+                    </div>
+                    <div class="col-10 info">
+                        <p class="info-name">Do Minh Vu4</p>
+                        <p class="info-language">PHP </p>
+                        <div class="color-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

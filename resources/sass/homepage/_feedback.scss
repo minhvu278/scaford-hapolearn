@@ -1,0 +1,146 @@
+.feedback {
+  width: 50%;
+  margin-top: 10px;
+  margin: auto;
+}
+
+.feedback-title {
+  color: black;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  border-bottom: 6px solid $main-color;
+  border-radius: 3px;
+}
+
+.feedback-text {
+  width: 705px;
+  height: 71px;
+  margin-top: 10px;
+  margin: auto;
+}
+
+.feedback-content {
+  color: black;
+  font-family: $main-font;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.feedback-user {
+  text-align: left;
+  font-size: 16px;
+  font-family: $main-font;
+}
+
+.arrow-bottom::before {
+  content: "";
+  border: 20px solid;
+  border-color: $gray-white transparent transparent transparent;
+  position: absolute;
+  left: 20px;
+  bottom: -40px;
+}
+
+.img-user {
+  margin: 23px 0 0 28px;
+}
+
+.info {
+  line-height: 5px;
+  top: 30px;
+}
+
+.info-name {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: $main-font;
+}
+
+.info-language {
+  font-size: 16px;
+  font-family: $main-font;
+}
+
+.slick-slider {
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-25%);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: 0.5px solid #C4C4C4;
+    z-index: 2;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #969494;
+  }
+
+  .slick-prev {
+    left: 0;
+
+    &::before {
+      content: "";
+    }
+  }
+
+  .slick-next {
+    right: 0;
+
+    &::before {
+      content: "";
+    }
+  }
+}
+
+.color-star {
+  color: $yellow;
+}
+
+@media only screen and (min-width: 740px) and  (max-width: 1023px) {
+  .feedback-title {
+    font-size: 50px;
+  }
+
+  .feedback-text {
+    width: 516px;
+    height: 46px;
+  }
+
+  .feedback-content {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 739px) {
+  .feedback-title {
+    font-size: 40px;
+  }
+
+  .feedback-content {
+    font-size: 16px;
+  }
+
+  .feedback-text {
+    width: 325px;
+    height: 71px;
+  }
+
+  .img-user {
+    width: 45px;
+  }
+
+  .info {
+    line-height: 1px;
+    top: -30px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
