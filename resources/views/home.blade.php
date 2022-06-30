@@ -265,4 +265,44 @@
             </div>
         </div>
     </div>
+    <section class="member-bg mt-5 d-flex">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <p class="text">Become a member of our growing community!</p>
+                </div>
+                <button class="col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-4 offset-sm-4 member-button">
+                    Start Learning Now!
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="statistic d-flex justify-content-center align-items-center">
+        <p class="statistic-title">
+            Statistic
+        </p>
+    </div>
+
+    <section class="container-fluid">
+        <div class="row statistic-name align-items-center">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-12">Courses</div>
+                    <div class="col-lg-12 statistic-number">1,586</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-12">Lessons</div>
+                    <div class="col-lg-12 statistic-number">2,689</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-12">Learners</div>
+                    <div class="col-lg-12 statistic-number">16,882</div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
