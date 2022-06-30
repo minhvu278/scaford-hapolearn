@@ -7,14 +7,14 @@
                     <p class="banner-title">Learn Anytime, Anywhere
                         <span class="banner-title title-weight">at HapoLearn
                             <img class="banner-image" src="{{ asset('images/owl.png') }}"
-                                 alt="HapoLearn Logo"> !
+                            alt="HapoLearn Logo"> !
                         </span>
                     </p>
                     <div class="row">
                         <p class="col-lg-6 col-md-7 col-sm-3 paragraph">Interactive lessons, "on-the-go"
                             practice, peer support.
                         </p>
-                    </div>
+                     </div>
                     <button class="banner-button"> Start Learning Now!</button>
                 </div>
             </div>
