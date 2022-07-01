@@ -87,7 +87,7 @@
                 <div class="row">
                     <div class="col-6 mx-auto mb-4 ">
                         <h6 class="text-uppercase fw-bold mb-4">
-                            <img class="logo-footer" src="/images/hapo-white.png" alt="logo">
+                            <img class="logo-footer" src="{{ asset('images/hapo-white.png') }}" alt="logo">
                         </h6>
                         <p class="text-white text-right fz-14 logo-text">
                             Interactive lessons, "on-the-go" practice, peer support.
