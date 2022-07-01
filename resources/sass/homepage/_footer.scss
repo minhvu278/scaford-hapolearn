@@ -1,0 +1,70 @@
+.footer-hapo {
+  background-color: $bg-footer;
+}
+
+.license {
+  background-color: $bg-license;
+  color: white;
+}
+
+.footer-info {
+  color: white;
+}
+
+.text-support {
+  color: white;
+  font-size: 19px;
+  text-align: left;
+  margin-left: 99px;
+}
+
+.icon-contact {
+  font-size: 42px;
+}
+
+.footer-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .text-support {
+    font-size: 12px;
+    margin-left: 11px;
+  }
+
+  .footer-info {
+    font-size: 13px;
+  }
+
+  .logo-footer {
+    width: 186px;
+    height: 34px;
+  }
+
+  .footer-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  .footer-content {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: block;
+  }
+
+  .logo-footer {
+    height: 30px;
+    width: 150px;
+  }
+
+  .logo-text {
+    font-size: 13px;
+  }
+
+  .footer-social {
+    font-size: 30px;
+  }
+}
