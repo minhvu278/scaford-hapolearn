@@ -10,11 +10,11 @@ class UserLesson extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $table = 'user_lesson';
+
     protected $fillable = [
         'user_id',
         'lesson_id',
         'register_lesson_time'
     ];
-
-    protected $table = 'user_lesson';
 }
