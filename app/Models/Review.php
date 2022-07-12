@@ -16,7 +16,6 @@ class Review extends Model
         'time',
         'message',
         'rate'
-
     ];
 
     public function course()

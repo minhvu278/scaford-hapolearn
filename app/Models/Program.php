@@ -14,7 +14,6 @@ class Program extends Model
         'lesson_id',
         'name',
         'requirement'
-
     ];
 
     public function lesson()
