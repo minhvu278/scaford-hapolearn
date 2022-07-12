@@ -29,6 +29,6 @@ class CreateCourseTagsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('course_tags');
+        Schema::dropIfExists('course_tag');
     }
 }
