@@ -22,7 +22,6 @@ class CourseFactory extends Factory
             'name' => $this->faker->name(),
             'description' => $this->faker->text(),
             'price' => $this->faker->numberBetween(),
-            'time' => $this->faker->time(),
         ];
     }
 }

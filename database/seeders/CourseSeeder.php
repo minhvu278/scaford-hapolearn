@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Course;
+use App\Models\User;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Faker\Factory as Faker;
 
 class CourseSeeder extends Seeder
 {
@@ -15,13 +15,6 @@ class CourseSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create();
-        foreach (range(1, 10) as $value) {
-            DB::table('courses')->insert([
-                'image' => $faker->image,
-                'name' => $faker->name,
-                'description' => $faker->address,
-            ]);
-        }
+        Course::factory()->times(20)->create();
     }
 }
