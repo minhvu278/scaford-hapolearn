@@ -16,10 +16,3 @@ use Illuminate\Support\Facades\Auth;
 */
 Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/course', function () {
-    $user = \App\Models\User::create([
-        'name' => 'Vu Do',
-        'email' => 'vudo@gmail.com',
-        'password' => \Illuminate\Support\Facades\Hash::make('password'),
-    ]);
-});
