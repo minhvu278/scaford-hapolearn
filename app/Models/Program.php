@@ -13,8 +13,6 @@ class Program extends Model
     protected $fillable = [
         'lesson_id',
         'name',
-        'title',
-        'description',
         'requirement'
 
     ];

@@ -13,10 +13,11 @@ class CreateUserLessonsTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_lessons', function (Blueprint $table) {
+        Schema::create('user_lesson', function (Blueprint $table) {
             $table->integer('user_id');
             $table->integer('lesson_id');
             $table->date('register_lesson_time')->nullable();
+            $table->primary(['user_id', 'lesson_id']);
         });
     }
 

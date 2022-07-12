@@ -15,4 +15,6 @@ class TeacherCourse extends Model
         'course_id',
         'teach_course_time'
     ];
+
+    protected $table = 'teacher_course';
 }

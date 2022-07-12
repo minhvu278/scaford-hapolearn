@@ -15,4 +15,6 @@ class UserLesson extends Model
         'lesson_id',
         'register_lesson_time'
     ];
+
+    protected $table = 'user_lesson';
 }

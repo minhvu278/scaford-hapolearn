@@ -13,10 +13,11 @@ class CreateTeacherCoursesTable extends Migration
      */
     public function up()
     {
-        Schema::create('teacher_courses', function (Blueprint $table) {
+        Schema::create('teacher_course', function (Blueprint $table) {
             $table->integer('user_id');
             $table->integer('course_id');
             $table->date('teacher_course_time')->nullable();
+            $table->primary(['user_id', 'course_id']);
         });
     }
 

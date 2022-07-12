@@ -12,7 +12,6 @@ class Review extends Model
 
     protected $fillable = [
         'parent_id',
-        'lesson_id',
         'course_id',
         'time',
         'message',

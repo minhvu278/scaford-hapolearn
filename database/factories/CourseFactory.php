@@ -18,10 +18,10 @@ class CourseFactory extends Factory
     public function definition()
     {
         return [
-            'image' => $this->faker->image(),
+            'image' => 'https://source.unsplash.com/random',
             'name' => $this->faker->name(),
             'description' => $this->faker->text(),
-            'price' => $this->faker->numberBetween(),
+            'price' => rand(1000000, 9000000),
         ];
     }
 }

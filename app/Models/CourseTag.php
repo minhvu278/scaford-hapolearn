@@ -14,4 +14,6 @@ class CourseTag extends Model
         'course_id',
         'tag_id'
     ];
+
+    protected $table = 'course_tag';
 }

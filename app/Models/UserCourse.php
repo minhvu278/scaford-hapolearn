@@ -15,4 +15,6 @@ class UserCourse extends Model
         'course_id',
         'register_course_time'
     ];
+
+    protected $table = 'user_course';
 }
