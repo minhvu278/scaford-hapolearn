@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginFormRequest;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -41,17 +42,17 @@ class LoginController extends Controller
 
     public function login(LoginFormRequest $request)
     {
+        $fieldType = filter_var($request->username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
+
         $data = [
-            'name' => $request['name'],
+            $fieldType => $request['username'],
             'password' => $request['password'],
         ];
 
-        $fieldType = filter_var($request->name, FILTER_VALIDATE_EMAIL) ? 'email' : 'name';
-
-        if (auth()->attempt(array($fieldType => $data['name'], 'password' => $data['password']))) {
-            return redirect('/test');
+        if (Auth::attempt($data)) {
+            return view('/test');
         }
 
-        return redirect('/login');
+        return redirect('/login')->with('error', __('message.data_error'));
     }
 }

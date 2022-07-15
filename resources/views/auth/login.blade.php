@@ -7,10 +7,10 @@
             <div class="card">
                 <div class="card-header login-title">{{ __('Sign in to HapoLearn') }}</div>
 
-                @if($errors->any())
-                    <div class="alert alert-danger text-center">
-                        Dữ liệu nhập vào không khớp, vui lòng kiểm tra lại
-                    </div>
+                @if (session('error'))
+                <div class="alert alert-danger text-center">
+                    {{ session('error') }}
+                </div>
                 @endif
 
                 <div class="card-body">
@@ -19,16 +19,16 @@
 
                         <div class="form-group row">
                             <div class="col-md-12 d-flex">
-                                <label for="name"
+                                <label for="username"
                                         class="col-md-4 col-form-label text-md-left p-0 login-label">{{ __('Username') }}</label>
                             </div>
                             <div class="col-md-12">
-                                <input id="name" type="text"
-                                        class="form-control @error('name') is-invalid @enderror login-input"
-                                        name="name"
-                                        value="{{ old('name') }}" autofocus>
+                                <input id="username" type="text"
+                                        class="form-control @error('username') is-invalid @enderror login-input"
+                                        name="username"
+                                        value="{{ old('username') }}" autofocus>
 
-                                @error('name')
+                                @error('username')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
