@@ -37,7 +37,7 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+
     }
 
     public function login(LoginFormRequest $request)
@@ -50,7 +50,7 @@ class LoginController extends Controller
         ];
 
         if (Auth::attempt($data)) {
-            return view('/test');
+            return redirect('/');
         }
 
         return redirect('/login')->with('error', __('message.data_error'));
