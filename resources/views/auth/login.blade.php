@@ -84,9 +84,9 @@
                             </div>
                         </div>
                         <div class="from-group row mt-5 justify-content-center">
-                            <button type="submit" class="btn btn-register">
+                            <a href="{{ route('register') }}" class="btn btn-register">
                                 {{ __('message.create_new_account') }}
-                            </button>
+                            </a>
                         </div>
                     </form>
                 </div>

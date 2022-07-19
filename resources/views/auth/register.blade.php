@@ -5,7 +5,12 @@
         <div class="row justify-content-center mt-5">
             <div class="col-md-5">
                 <div class="card">
-                    <div class="card-header text-center login-title">{{ __('message.sign_up_to_HapoLearn') }}</div>
+                    <div class="card-header text-center login-title">{{ __('message.sign_up_to_hapolearn') }}</div>
+                    @if (session('error'))
+                        <div class="alert alert-danger text-center">
+                            {{ session('error') }}
+                        </div>
+                    @endif
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
