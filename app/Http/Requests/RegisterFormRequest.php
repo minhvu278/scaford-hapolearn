@@ -27,7 +27,7 @@ class RegisterFormRequest extends FormRequest
             'username' => 'required|min:6|max:50|unique:users|alpha_dash',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6|alpha_dash',
-            'password_confirm' => 'required|min:6|same:password|alpha_dash',
+            'password_confirm' => 'required|min:6|same:password',
         ];
     }
 
@@ -37,8 +37,6 @@ class RegisterFormRequest extends FormRequest
             'required' => __('message.required'),
             'max' => __('message.max'),
             'min' => __('message.min'),
-            'username.unique' => __('message.user_name_unique'),
-            'email.unique' => __('message.email_unique'),
             'email.regex' => __('message.email_regex'),
             'email.email' => __('message.email_email'),
             'password_confirm' => __('message.password_confirm_same'),
