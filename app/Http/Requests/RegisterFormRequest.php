@@ -37,7 +37,6 @@ class RegisterFormRequest extends FormRequest
             'required' => __('message.required'),
             'max' => __('message.max'),
             'min' => __('message.min'),
-            'email.regex' => __('message.email_regex'),
             'email.email' => __('message.email_email'),
             'password_confirm' => __('message.password_confirm_same'),
             'alpha_dash' => __('message.space'),
