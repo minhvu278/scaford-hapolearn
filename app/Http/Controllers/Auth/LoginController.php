@@ -37,7 +37,6 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-
     }
 
     public function login(LoginFormRequest $request)
