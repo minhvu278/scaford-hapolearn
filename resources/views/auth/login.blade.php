@@ -67,7 +67,7 @@
                         </div>
                         <div class="form-group row justify-content-center">
                             <div class="col-md-10 sign-with">
-                                <p class="title-google">{{ __('message.sign_in_witch') }}</p>
+                                <p class="title-google">{{ __('message.sign_in_with') }}</p>
                             </div>
                         </div>
                         <div class="form-group row justify-content-center mt-4 mb-4">
@@ -80,7 +80,7 @@
                         </div>
                         <div class="form-group row justify-content-center">
                             <div class="col-md-10 sign-with model-register">
-                                <p class="title-google title-register">{{ __('message.sign_up_to_HapoLearn') }}</p>
+                                <p class="title-google title-register">{{ __('message.sign_up_to_hapolearn') }}</p>
                             </div>
                         </div>
                         <div class="from-group row mt-5 justify-content-center">
