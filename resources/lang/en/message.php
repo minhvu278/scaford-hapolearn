@@ -14,6 +14,7 @@ return [
     'email_email' => 'Email incorrect format, please check again',
     'password_confirm_same' => ':attribute does not match, please check again',
     'register_error' => 'Register error',
+    'space' => ':attribute there must be no spaces',
     'sign_in_title' => 'Sign in to HapoLearn',
     'user' => 'Username',
     'password' => 'Password',

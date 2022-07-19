@@ -13,6 +13,7 @@ return [
     'email_email' => 'Email chưa đúng định dạng, vui lòng kiểm tra lại ',
     'password_confirm_same' => ':attribute không khớp, vui lòng kiểm tra lại',
     'register_error' => 'Đăng ký lỗi',
+    'space' => ':attribute không được có khoảng trắng',
     'sign_in_title' => 'Đăng nhập vào HapoLearn',
     'user' => 'Tên tài khoản',
     'password' => 'Mật khẩu',
