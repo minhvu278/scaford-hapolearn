@@ -16,7 +16,7 @@ class CreateReviewsTable extends Migration
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
             $table->integer('parent_id');
-            $table->integer('lesson_id');
+            $table->integer('user_id');
             $table->integer('course_id');
             $table->dateTime('time')->nullable();
             $table->string('message')->nullable();

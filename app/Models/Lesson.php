@@ -30,4 +30,9 @@ class Lesson extends Model
     {
         return $this->belongsToMany(User::class);
     }
+
+    public function scopeCountLessons($query)
+    {
+        return $query->count();
+    }
 }

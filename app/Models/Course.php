@@ -42,4 +42,14 @@ class Course extends Model
     {
         return $this->belongsToMany(Tag::class);
     }
+
+    public function scopeShowCourses($query)
+    {
+        return $query->limit(config('course.course_number_home'))->get();
+    }
+
+    public function scopeCountCourses($query)
+    {
+        return $query->count();
+    }
 }

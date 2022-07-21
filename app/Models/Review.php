@@ -12,6 +12,7 @@ class Review extends Model
 
     protected $fillable = [
         'parent_id',
+        'user_id',
         'course_id',
         'time',
         'message',
@@ -26,5 +27,10 @@ class Review extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function scopeShowReviews($query)
+    {
+        return $query->limit(config('reviews.review_number_home'))->get();
     }
 }
