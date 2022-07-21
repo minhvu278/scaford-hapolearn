@@ -22,5 +22,4 @@ class UserCourse extends Model
     {
         return $query->select('user_id')->groupBy('user_id')->get()->count();
     }
-
 }
