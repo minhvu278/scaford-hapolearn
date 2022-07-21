@@ -23,48 +23,20 @@
     <div class="bg-gray"></div>
     <section class="course container-fluid">
         <div class="card-container container row">
+            @foreach($mainCourses as $course)
             <div class="col-lg-4 col-md-12">
                 <div class="card-main card">
                     <div class="card-image card-left">
-                        <img src="{{ asset('images/html-css.png')}}" class="card-img-top" alt="">
+                        <img src="{{ $course->image }}" class="card-img-top" alt="">
                     </div>
                     <div class="card-body">
-                        <p class="card-title">HTML/CSS/js Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML,
-                            JS, and CSS before entering New Media. I had coded quite a bit,
-                            but never touched anything in regards to web development.</p>
+                        <p class="card-title">{{ $course->name }}</p>
+                        <p class="card-text">{{ $course->description }}</p>
                         <button class="card-btn">Take This Course</button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="card-main card">
-                    <div class="card-image card-center">
-                        <img src="{{ asset('images/laravel.png') }}" class="card-img-top" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-title">LARAVEL Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML,
-                            JS, and CSS before entering New Media. I had coded quite a bit,
-                            but never touched anything in regards to web development.</p>
-                        <button class="card-btn">Take This Course</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="card-main card">
-                    <div class="card-image card-right">
-                        <img src="{{asset('images/php.png')}}" class="card-img-top" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-title">PHP Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML,
-                            JS, and CSS before entering New Media. I had coded quite a bit,
-                            but never touched anything in regards to web development.</p>
-                        <button class="card-btn">Take This Course</button>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
     <div class="other d-flex justify-content-center align-items-center">
