@@ -160,13 +160,13 @@
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12">Courses</div>
-                    <div class="col-lg-12 statistic-number">{{ $coursesCount }}</div>
+                    <div class="col-lg-12 statistic-number">{{ $countCourses }}</div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12">Lessons</div>
-                    <div class="col-lg-12 statistic-number">{{ $lessonsCount }}</div>
+                    <div class="col-lg-12 statistic-number">{{ $countLessons }}</div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">

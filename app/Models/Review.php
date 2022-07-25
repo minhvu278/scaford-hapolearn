@@ -29,8 +29,8 @@ class Review extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function scopeShowReviews($query)
+    public function scopeMain($query)
     {
-        return $query->limit(config('reviews.review_number_home'))->get();
+        return $query->orderBy('parent_id', config('home.sort_high_to_low'))->limit(config('reviews.review_number_home'));
     }
 }

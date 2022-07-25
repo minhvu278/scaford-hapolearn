@@ -18,8 +18,8 @@ class UserCourse extends Model
         'register_course_time'
     ];
 
-    public function scopeCountLearner($query)
+    public function scopeLearner($query)
     {
-        return $query->select('user_id')->groupBy('user_id')->get()->count();
+        return $query->select('user_id')->groupBy('user_id');
     }
 }

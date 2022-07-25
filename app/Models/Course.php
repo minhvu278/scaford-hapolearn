@@ -43,13 +43,8 @@ class Course extends Model
         return $this->belongsToMany(Tag::class);
     }
 
-    public function scopeShowCourses($query)
+    public function scopeMain($query)
     {
-        return $query->limit(config('course.course_number_home'))->get();
-    }
-
-    public function scopeCountCourses($query)
-    {
-        return $query->count();
+        return $query->orderBy('name', config('home.sort_low_to_high'))->limit(config('course.course_number_home'));
     }
 }
