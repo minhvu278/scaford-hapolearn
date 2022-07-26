@@ -42,4 +42,9 @@ class Course extends Model
     {
         return $this->belongsToMany(Tag::class);
     }
+
+    public function scopeMain($query)
+    {
+        return $query->orderBy('name', config('home.sort_low_to_high'))->limit(config('course.course_number_home'));
+    }
 }
