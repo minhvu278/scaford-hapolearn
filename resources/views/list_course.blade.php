@@ -1,103 +1,136 @@
 @extends('layouts.app')
 @section('content')
-    <section>
-        <div class="container mt-4">
+    <section class="course">
+        <div class="container list-course">
             <div class="row">
-                <div class="col-9">
-                    <div class="row">
-                        <div class="col-1 mr-5 filter">
-                            <button class="filter-button"><i class="fa-solid fa-head-side-mask"></i>Filter</button>
-                        </div>
-                        <div class="col-6 search-xxx">
-                            <input type="text" class="search-input">
-                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                        </div>
-                        <div class="col-2">
-                            <button class="btn-search">Search</button>
-                        </div>
-                    </div>
+                <div class="col-1 mr-5 pl-0">
+                    <button class="btn-filter">
+                        <i class="fa-solid fa-arrow-down-wide-short"></i>
+                        Filter
+                    </button>
+                </div>
+
+                <div class="col-4 box-search">
+                    <input type="text" class="input-search" placeholder="Search...">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="col-1">
+                    <button class="btn-search">
+                        Search
+                    </button>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-6 course-item">
-                    <div class="row">
+
+            <div class="row list-item">
+                @foreach($courses as $course)
+                <div class="col-6 box-item">
+                    <div class="row course-item">
                         <div class="col-3">
-                            <img src="{{ asset('images/owl.png') }}" alt="">
+                            <img class="img-item" src="{{ asset('images/list-course.png')}}" alt="">
                         </div>
-                        <div class="col-9">
-                            <div class="heading">HTML Fundamentals</div>
-                            <div class="paragraph">
-                                <p>Practice during lessons, practice between lessons, practice whenever you can.
-                                    Master the task, then reinforce and test your knowledge with fun, hands-on exercises
-                                    and interactive quizzes.
-                                </p>
+
+                        <div class="col-8 item-content">
+                            <div class="item-title">
+                                {{ $course->name }}
                             </div>
-                            <div class="d-flex justify-content-end">
-                                <button class="btn-more">More</button>
+                            <div class="item-description">
+                                {{ $course->description }}
+                            </div>
+
+                            <div>
+                                <button class="btn-more">
+                                    More
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="row">
-                                <div class="col-lg-12">Courses</div>
-                                <div class="col-lg-12">1,586</div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-3">
+                            <div class="course-learners">
+                                Learners
+                            </div>
+                            <div class="course-number">
+                                16,882
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="row">
-                                <div class="col-lg-12">Lessons</div>
-                                <div class="col-lg-12">2,689</div>
+
+                        <div class="col-3">
+                            <div class="course-learners">
+                                Learners
+                            </div>
+                            <div class="course-number">
+                                16,882
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="row">
-                                <div class="col-lg-12">Learners</div>
-                                <div class="col-lg-12">16,882</div>
+
+                        <div class="col-3">
+                            <div class="course-learners">
+                                Learners
+                            </div>
+                            <div class="course-number">
+                                16,882
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="row">
+                <div class="col-6 box-item">
+                    <div class="row course-item">
                         <div class="col-3">
-                            <img src="{{ asset('images/owl.png') }}" alt="">
+                            <img class="img-item" src="{{ asset('images/list-course.png')}}" alt="">
                         </div>
-                        <div class="col-9">
-                            <div class="heading">HTML Fundamentals</div>
-                            <div class="paragraph">
-                                <p>Practice during lessons, practice between lessons, practice whenever you can.
-                                    Master the task, then reinforce and test your knowledge with fun, hands-on exercises
-                                    and interactive quizzes.
-                                </p>
+
+                        <div class="col-8 item-content">
+                            <div class="item-title">
+                                HTML Fundamentals
                             </div>
-                            <div class="btn-more">
-                                <button>More</button>
+                            <div class="item-description">
+                                Practice during lessons, practice between lessons, practice whenever you can. Master the task, then reinforce and test your knowledge with fun, hands-on exercises and interactive quizzes.
+                            </div>
+
+                            <div>
+                                <button class="btn-more">
+                                    More
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="row">
-                                <div class="col-12">Learners</div>
-                                <div class="col-12">16,882</div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-3">
+                            <div class="course-learners">
+                                Learners
+                            </div>
+                            <div class="course-number">
+                                16,882
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="row">
-                                <div class="col-12">Lesson</div>
-                                <div class="col-12">2,689</div>
+
+                        <div class="col-3">
+                            <div class="course-learners">
+                                Learners
+                            </div>
+                            <div class="course-number">
+                                16,882
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="row">
-                                <div class="col-12">Times</div>
-                                <div class="col-12">100 (h)</div>
+
+                        <div class="col-3">
+                            <div class="course-learners">
+                                Learners
+                            </div>
+                            <div class="course-number">
+                                16,882
                             </div>
                         </div>
                     </div>
                 </div>
+                @endforeach
             </div>
         </div>
     </section>
+
 @endsection
