@@ -6,6 +6,7 @@
 
 require('./bootstrap');
 require("slick-carousel");
+require("select2");
 
 window.Vue = require('vue').default;
 
@@ -61,3 +62,5 @@ $(document).ready(function() {
     ]
   });
 });
+
+$('select').select2();
