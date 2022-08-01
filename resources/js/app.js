@@ -7,6 +7,7 @@
 require('./bootstrap');
 require("slick-carousel");
 require("select2");
+require('./filter');
 
 window.Vue = require('vue').default;
 

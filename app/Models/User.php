@@ -51,6 +51,11 @@ class User extends Authenticatable
         return $this->belongsToMany(Lesson::class);
     }
 
+    public function scopeTeachers($query)
+    {
+        return $query->where('role', config('roles.teacher'));
+    }
+
     /**
      * The attributes that should be hidden for arrays.
      *

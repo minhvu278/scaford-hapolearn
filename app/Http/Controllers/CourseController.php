@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Course;
+use App\Models\Tag;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -12,10 +14,13 @@ class CourseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $courses = Course::main()->get();
-        return view('list_course', compact('courses'));
+        $data = $request->all();
+        $courses = Course::search($data)->paginate(config('course.pagination'));
+        $teachers = User::teachers()->get();
+        $tags = Tag::get();
+        return view('courses.index', compact('courses', 'teachers', 'tags', 'data'));
     }
 
     /**

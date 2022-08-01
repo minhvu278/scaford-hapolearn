@@ -1,210 +1,206 @@
-.list-course {
-    margin-top: 50px;
-}
-
-.btn-filter,
-.box-search,
-.btn-search,
-.item-title,
-.item-description,
-.course-learners,
-.course-number {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    color: $main-color;
-}
-
-.btn-filter {
-    font-size: 16px;
-    background-color: transparent;
-    border: 1px solid $bg-border;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-}
-
-.box-search {
-    border: 1px solid $bg-border;
-    border-radius: 5px;
-    padding: 0;
-    font-size: 16px;
-
-    button {
-        border: 0;
-        background: transparent;
-    }
-}
-
-.input-search {
-    border: 0;
-    line-height: 38px;
-    width: 91%;
-    padding-left: 9px;
-}
-
-.btn-search {
-    line-height: 38px;
-    border: 1px solid $bg-border;
-    font-size: 16px;
-    background-color: $main-color;
-    color: white;
-    border-radius: 5px;
-    width: 100px;
-    height: 40px;
-}
-
-.list-item {
+.container-search {
     margin-top: 40px;
-}
+    margin-right: 0;
+    margin-left: 15px;
 
-.box-item {
-    border: 1px solid $bg-border;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
-}
-
-.course-item {
-    border-bottom: 1px solid $gray;
-}
-
-.img-item {
-    width: 80px;
-    height: 80px;
-    border-radius: 48px;
-    margin: 20px 0 0 20px;
-}
-
-.item-content {
-    height: 254px;
-    position: relative;
-}
-
-.item-title {
-    font-size: 25px;
-    color: black;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.item-description {
-    font-size: 18px;
-    color: black;
-    font-weight: 400;
-}
-
-.btn-more {
-    position: absolute;
-    bottom: 40px;
-    right: -10px;
-    background-color: $main-color;
-    color: white;
-    width: 106px;
-    height: 42px;
-    border-radius: 22px;
-    border: 0;
-}
-
-.course-learners {
-    font-size: 25px;
-    color: black;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.course-number {
-    color: $main-font;
-    font-size: 30px;
-    margin-bottom: 19px;
-}
-
-.filter-content {
-    background-color: white;
-    border: 1px solid #C4C4C4;
-    border-radius: 4px;
-    margin-top: 20px;
-    display: flex;
-    padding: 4px 20px;
-    min-height: 100px;
-    span {
-        font-size: 16px;
-        color: #505353;
-        font-weight: 700;
+    .filter-form {
+        padding: 10px;
+        margin-left: -15px;
+        display: none;
     }
-    & > span {
-        min-width: 90px;
-        margin-top: 8px;
+
+    .btn-filter {
+        padding: 9px 13px;
+        color: black;
     }
-    & > div {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+
+    .input-search {
+        padding: 9px 43px 9px 13px;
+        width: 355px;
     }
-    .filter-new,
-    .filter-old {
-        display: block;
-        font-size: 14px;
-        border-radius: 2px;
-        padding: 6px 10px;
-        width: 80px;
-        text-align: center;
-        text-decoration: none;
+
+    .btn-search-icon {
+        padding: 7px;
+        border: 0;
+        border-radius: 5px;
+        background-color: white;
+        transform: translateX(-40px);
+
+        .search-icon {
+            font-size: 20px;
+            color : $main-color;
+        }
     }
-    .filter-new {
+
+    .btn-submit-search {
+        background: $main-color;
+        border: 1px solid $bg-border;
+        border-radius: 5px;
+        padding: 8px 12px;
         color: white;
-        background-color: #B2D235;
-        margin-left: 10px;
+        margin-left: -30px;
     }
-    .filter-old {
-        color: #505353;
-        background-color: #E5E6E7;
-        margin-left: 10px;
+}
+
+.border-btn-input {
+    background: white;
+    border: 1px solid $bg-border;
+    border-radius: 5px;
+}
+
+.container-courses {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.courses-item {
+    background: white;
+    border: 1px solid $bg-border;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    min-width: 540px;
+    height: 350px;
+    margin-top: 20px;
+
+    .course-info {
+        margin-top: 30px;
+        border-bottom: 1px solid $bg-border;
     }
-    .filter-option-container {
-        border: 1px solid #E5E6E7;
-        border-radius: 2px;
-        padding: 4px;
-        width: 180px;
+
+    .course-img {
+        width: 89px;
+        height: 89px;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    .info-detail {
+        font-size: 18px;
+        margin-left: 20px;
+
+        .course-name {
+            font-size: 25px;
+            color: black;
+            font-family: $main-font;
+            font-weight: 700;
+        }
+
+        .course-description {
+            font-size: 18px;
+            color: black;
+            font-family: $main-font;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .btn-detail {
+            padding: 5px 20px;
+            background: $main-color;
+            box-shadow: inset 0 2px 4px $bg-border;
+            border-radius: 22px;
+            color: white;
+            font-size: 18px;
+            float:right;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .course-statistic {
+        margin-top: 5px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        font-size: 14px;
-        margin-left: 10px;
-        padding-left: 10px;
-        position: relative;
-        cursor: default;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        .learners-title,
+        .lessons-title,
+        .times-title {
+            font-weight: 700;
+            font-size: 25px;
+            color: black;
+            font-family: $main-font;
+        }
+
+        .learners-number,
+        .lessons-number,
+        .times-number {
+            font-size: 26px;
+            font-family: $main-font;
+            color: $main-color;
+            font-weight: 700;
+            margin-top: 10px;
+            text-align: center;
+        }
     }
-    .filter-option-container:hover .filter-option{
-        display: block;
+}
+
+.newest,
+.oldest {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    border-radius: 0.25em;
+    background: $main-color;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2), inset 0 -3px 0 rgba(0,0,0,0.22);
+    transition: 0.3s;
+    user-select: none;
+    padding: 5px 15px;
+
+    &:active {
+        transform: translateY(2px);
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2), inset 0px -1px 0 rgba(0,0,0,0.22);
     }
-    .filter-option {
-        list-style: none;
-        margin: 0;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        border: 1px solid #E5E6E7;
-        width: 100%;
-        padding: 0;
-        background-color: white;
-        display: none;
-        border-radius: 2px;
-        z-index: 1;
+}
+
+#newest:checked + .newest,
+#oldest:checked + .oldest {
+    background: $main-color;
+    color: white;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.ml-75 {
+    margin-left: 75px;
+}
+
+.hidden {
+    display: none;
+}
+
+.select2-container {
+    .select2-selection--single,
+    .select2-selection--multiple {
+        min-width: 180px;
+        height: 34px;
     }
-    .filter-option li {
-        width: 100%;
-    }
-    .filter-option a {
-        color: #505353;
-        display: block;
-        margin: 0 10px;
-        border-bottom: 1px solid #E5E6E7;
-        font-size: 16px;
-        font-weight: 400;
-        text-decoration: none;
-        padding: 4px 0;
-    }
-    .filter-option li:last-child a {
-        border: 0;
+}
+
+.select2-container {
+    width: 180px !important;
+}
+
+.container-search {
+    .filter-form {
+        &.active {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }
