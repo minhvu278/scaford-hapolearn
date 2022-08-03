@@ -43,7 +43,7 @@ class Course extends Model
         return $this->belongsToMany(Tag::class);
     }
 
-    public function getTotalLearnersAttribute()
+    public function getLearnersAttribute()
     {
         return $this->users()->count();
     }
@@ -65,7 +65,7 @@ class Course extends Model
         }
 
         if (isset($data['created_time'])) {
-            $data['created_time'] == config('course.newest') ? $query->orderBy('courses.created_at', config('course.sort_hight_to_low')) : $query->orderBy('courses.created_at');
+            $query->orderBy('courses.created_at', config('course.sort_high_to_low'));
         }
 
         if (isset($data['teachers']) && !empty($data['teachers'])) {

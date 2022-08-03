@@ -41,33 +41,33 @@
                     <div class="form-group mr-10">
                         <select name="learner" id="learner" class="js-example-select2">
                             <option value="">Số người học</option>
-                            <option value="{{ config('course.sort_low_to_hight') }}"
-                                    @if(isset($data['learner']) && $data['learner'] == config('course.sort_low_to_hight')) selected @endif
+                            <option value="{{ config('course.sort_low_to_high') }}"
+                                    @if(isset($data['learner']) && $data['learner'] == config('course.sort_low_to_high')) selected @endif
                             >Tăng dần</option>
-                            <option value="{{ config('course.sort_hight_to_low') }}"
-                                    @if(isset($data['learner']) && $data['learner'] == config('course.sort_hight_to_low')) selected @endif
+                            <option value="{{ config('course.sort_high_to_low') }}"
+                                    @if(isset($data['learner']) && $data['learner'] == config('course.sort_high_to_low')) selected @endif
                             >Giảm dần</option>
                         </select>
                     </div>
                     <div class="form-group mr-10">
                         <select name="time" id="time" class="js-example-select2">
                             <option value="">Thời gian học</option>
-                            <option value="{{ config('course.sort_low_to_hight') }}"
-                                    @if(isset($data['time']) && $data['time'] == config('course.sort_low_to_hight')) selected @endif
+                            <option value="{{ config('course.sort_low_to_high') }}"
+                                    @if(isset($data['time']) && $data['time'] == config('course.sort_low_to_high')) selected @endif
                             >Tăng dần</option>
-                            <option value="{{ config('course.sort_hight_to_low') }}"
-                                    @if(isset($data['time']) && $data['time'] == config('course.sort_hight_to_low')) selected @endif
+                            <option value="{{ config('course.sort_high_to_low') }}"
+                                    @if(isset($data['time']) && $data['time'] == config('course.sort_high_to_low')) selected @endif
                             >Giảm dần</option>
                         </select>
                     </div>
                     <div class="form-group mr-10">
                         <select name="lesson" id="lesson" class="js-example-select2">
                             <option value="">Số bài học</option>
-                            <option value= "{{ config('course.sort_low_to_hight') }}"
-                                    @if(isset($data['lesson']) && $data['lesson'] == config('course.sort_low_to_hight')) selected @endif
+                            <option value= "{{ config('course.sort_low_to_high') }}"
+                                    @if(isset($data['lesson']) && $data['lesson'] == config('course.sort_low_to_high')) selected @endif
                             >Tăng dần</option>
-                            <option value="{{ config('course.sort_hight_to_low') }}"
-                                    @if(isset($data['lesson']) && $data['lesson'] == config('course.sort_hight_to_low')) selected @endif
+                            <option value="{{ config('course.sort_high_to_low') }}"
+                                    @if(isset($data['lesson']) && $data['lesson'] == config('course.sort_high_to_low')) selected @endif
                             >Giảm dần</option>
                         </select>
                     </div>
@@ -84,11 +84,11 @@
                     <div class="form-group mr-10">
                         <select name="rate" id="rate" class="js-example-select2">
                             <option value="">Reviews</option>
-                            <option value="{{ config('course.sort_low_to_hight') }}"
-                                    @if (isset($data['rate']) && $data['rate'] == config('course.sort_low_to_hight')) selected @endif>
+                            <option value="{{ config('course.sort_low_to_high') }}"
+                                    @if (isset($data['rate']) && $data['rate'] == config('course.sort_low_to_high')) selected @endif>
                                 Tăng dần</option>
-                            <option value="{{ config('course.sort_hight_to_low') }}"
-                                    @if (isset($data['rate']) && $data['rate'] == config('course.sort_hight_to_low')) selected @endif>
+                            <option value="{{ config('course.sort_high_to_low') }}"
+                                    @if (isset($data['rate']) && $data['rate'] == config('course.sort_high_to_low')) selected @endif>
                                 Giảm dần</option>
                         </select>
                     </div>
@@ -124,10 +124,7 @@
                     </div>
                 </div>
             @endforeach
-{{--            @if(count($allCourses) == 0)--}}
-{{--                <h3>No Result</h3>--}}
-{{--            @endif--}}
-{{--            {{ $allCourses->appends(request()->query())->links('courses.paginate') }}--}}
         </div>
+        {{ $courses->appends(request()->query())->links() }}
     </div>
 @endsection
