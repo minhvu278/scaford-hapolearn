@@ -4,8 +4,12 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+import 'select2';
+
 require('./bootstrap');
 require("slick-carousel");
+require("./customer");
+require('./filter');
 
 window.Vue = require('vue').default;
 
