@@ -23,48 +23,20 @@
     <div class="bg-gray"></div>
     <section class="course container-fluid">
         <div class="card-container container row">
+            @foreach($courses as $course)
             <div class="col-lg-4 col-md-12">
                 <div class="card-main card">
                     <div class="card-image card-left">
-                        <img src="{{ asset('images/html-css.png')}}" class="card-img-top" alt="">
+                        <img src="{{ $course->image }}" class="card-img-top" alt="">
                     </div>
                     <div class="card-body">
-                        <p class="card-title">HTML/CSS/js Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML,
-                            JS, and CSS before entering New Media. I had coded quite a bit,
-                            but never touched anything in regards to web development.</p>
+                        <p class="card-title">{{ $course->name }}</p>
+                        <p class="card-text">{{ Str::limit($course->description, 60) }}</p>
                         <button class="card-btn">Take This Course</button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="card-main card">
-                    <div class="card-image card-center">
-                        <img src="{{ asset('images/laravel.png') }}" class="card-img-top" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-title">LARAVEL Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML,
-                            JS, and CSS before entering New Media. I had coded quite a bit,
-                            but never touched anything in regards to web development.</p>
-                        <button class="card-btn">Take This Course</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="card-main card">
-                    <div class="card-image card-right">
-                        <img src="{{asset('images/php.png')}}" class="card-img-top" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-title">PHP Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML,
-                            JS, and CSS before entering New Media. I had coded quite a bit,
-                            but never touched anything in regards to web development.</p>
-                        <button class="card-btn">Take This Course</button>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
     <div class="other d-flex justify-content-center align-items-center">
@@ -74,45 +46,20 @@
     </div>
     <section class="course container-fluid">
         <div class="card-container container row">
-            <div class="col-lg-4">
-                <div class="card-main card">
-                    <div class="card-image card-left">
-                        <img src="{{ asset('images/css.png')}}" class="card-img-top" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-title">CSS Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS
-                            before entering New Media,...</p>
-                        <button class="card-btn">Take This Course</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-col col-lg-4">
-                <div class="card-main card">
-                    <div class="card-image card-center">
-                        <img src="{{ asset('images/rails.png') }}" class="card-img-top" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-title">Ruby on rails Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML, JS,
-                            and CSS before entering New Media,...</p>
-                        <button class="card-btn">Take This Course</button>
+            @foreach($courses as $course)
+                <div class="col-lg-4 col-md-12">
+                    <div class="card-main card">
+                        <div class="card-image card-left">
+                            <img src="{{ $course->image }}" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title">{{ $course->name }}</p>
+                            <p class="card-text">{{ Str::limit($course->description, 60) }}</p>
+                            <button class="card-btn">Take This Course</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-col col-lg-4">
-                <div class="card-main card">
-                    <div class="card-image card-right">
-                        <img src="{{asset('images/java.png')}}" class="card-img-top" alt="">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-title">Java Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML, JS,
-                            and CSS before entering New Media,...</p>
-                        <button class="card-btn">Take This Course</button>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
     <section class="why-bg mt-5">
@@ -163,37 +110,11 @@
 
     <div class="container">
         <div class="row slider">
+            @foreach($reviews as $review)
             <div class="col-lg-12">
                 <div class="card position-relative arrow-bottom">
                     <div class="card-body">
-                        <p class="feedback-user">“A wonderful course on how to start. Eddie beautifully conveys all
-                            essentials of a becoming a good Angular developer. Very glad to have taken this course.
-                            Thank you Eddie Bryan.”</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-2 user">
-                        <img class="img-user" src="{{ asset('images/img-feedback.png')}}" alt="">
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-10 info">
-                        <p class="info-name">Do Minh Vu3</p>
-                        <p class="info-language">PHP</p>
-                        <div class="color-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="card position-relative arrow-bottom">
-                    <div class="card-body">
-                        <p class="feedback-user">“A wonderful course on how to start. Eddie beautifully conveys all
-                            essentials of a becoming a good Angular developer. Very glad to have taken this course.
-                            Thank you Eddie Bryan.”</p>
+                        <p class="feedback-user">{{ $review->message }}</p>
                     </div>
                 </div>
                 <div class="row">
@@ -201,68 +122,19 @@
                         <img class="img-user" src="{{ asset('images/img-feedback.png')}}" alt="">
                     </div>
                     <div class="col-10 info">
-                        <p class="info-name">Do Minh Vu4</p>
-                        <p class="info-language">PHP</p>
+                        <p class="info-name">{{ $review->user->name }}</p>
+                        <p class="info-language">{{ $review->course->name }}</p>
                         <div class="color-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
+                            @php
+                                $stars = $review['rate'];
+                            @endphp
+                            @for($i = 0; $i < $stars ; $i++) <i class="fa-solid fa-star"></i>
+                            @endfor
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="card position-relative arrow-bottom">
-                    <div class="card-body">
-                        <p class="feedback-user">“A wonderful course on how to start. Eddie beautifully conveys all
-                            essentials of a becoming a good Angular developer. Very glad to have taken this course.
-                            Thank you Eddie Bryan.”</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2 user">
-                        <img class="img-user" src="{{ asset('images/img-feedback.png')}}" alt="">
-                    </div>
-                    <div class="col-10 info">
-                        <p class="info-name">Do Minh Vu4</p>
-                        <p class="info-language">PHP</p>
-                        <div class="color-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="card position-relative arrow-bottom">
-                    <div class="card-body">
-                        <p class="feedback-user">“A wonderful course on how to start. Eddie beautifully conveys all
-                            essentials of a becoming a good Angular developer. Very glad to have taken this course.
-                            Thank you Eddie Bryan.”</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2 user">
-                        <img class="img-user" src="{{ asset('images/img-feedback.png')}}" alt="">
-                    </div>
-                    <div class="col-10 info">
-                        <p class="info-name">Do Minh Vu4</p>
-                        <p class="info-language">PHP </p>
-                        <div class="color-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
     <section class="member-bg mt-5 d-flex">
@@ -288,19 +160,19 @@
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12">Courses</div>
-                    <div class="col-lg-12 statistic-number">1,586</div>
+                    <div class="col-lg-12 statistic-number">{{ $countCourses }}</div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12">Lessons</div>
-                    <div class="col-lg-12 statistic-number">2,689</div>
+                    <div class="col-lg-12 statistic-number">{{ $countLessons }}</div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="row">
                     <div class="col-lg-12">Learners</div>
-                    <div class="col-lg-12 statistic-number">16,882</div>
+                    <div class="col-lg-12 statistic-number">{{ $learners }}</div>
                 </div>
             </div>
         </div>
