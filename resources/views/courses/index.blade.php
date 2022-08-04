@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="form-group mr-10">
-                        <select name="teachers[]" id="teacher" class="js-example-select2 js-example-placeholder-multiple-teacher mr-10" multiple="multiple">
+                        <select name="teachers[]" id="teacher" class="js-select2 teacher-placeholder-multiple mr-10" multiple="multiple">
                             @foreach($teachers as $teacher)
                                 <option value="{{ $teacher->id }}"
                                         @if(isset($data['teachers']) && in_array($teacher->id, $data['teachers'])) selected @endif>
@@ -39,7 +39,7 @@
                         </select>
                     </div>
                     <div class="form-group mr-10">
-                        <select name="learner" id="learner" class="js-example-select2">
+                        <select name="learner" id="learner" class="js-select2">
                             <option value="">{{ __('course.number_of_learners') }}</option>
                             <option value="{{ config('course.sort_low_to_high') }}"
                                     @if(isset($data['learner']) && $data['learner'] == config('course.sort_low_to_high')) selected @endif
@@ -50,7 +50,7 @@
                         </select>
                     </div>
                     <div class="form-group mr-10">
-                        <select name="time" id="time" class="js-example-select2">
+                        <select name="time" id="time" class="js-select2">
                             <option value="">{{ __('course.study_time') }}</option>
                             <option value="{{ config('course.sort_low_to_high') }}"
                                     @if(isset($data['time']) && $data['time'] == config('course.sort_low_to_high')) selected @endif
@@ -61,7 +61,7 @@
                         </select>
                     </div>
                     <div class="form-group mr-10">
-                        <select name="lesson" id="lesson" class="js-example-select2">
+                        <select name="lesson" id="lesson" class="js-select2">
                             <option value="">{{ __('course.number_of_lessons') }}</option>
                             <option value= "{{ config('course.sort_low_to_high') }}"
                                     @if(isset($data['lesson']) && $data['lesson'] == config('course.sort_low_to_high')) selected @endif
@@ -72,7 +72,7 @@
                         </select>
                     </div>
                     <div class="form-group mr-10 ml-75">
-                        <select name="tags[]" id="tags" class="js-example-select2 js-example-placeholder-multiple-tag" multiple="multiple">
+                        <select name="tags[]" id="tags" class="js-select2 tag-placeholder-multiple" multiple="multiple">
                             <option value="">{{ __('course.tags') }}</option>
                             @foreach($tags as $tag)
                                 <option value="{{ $tag->id }}"
@@ -82,7 +82,7 @@
                         </select>
                     </div>
                     <div class="form-group mr-10">
-                        <select name="rate" id="rate" class="js-example-select2">
+                        <select name="rate" id="rate" class="js-select2">
                             <option value="">{{ __('course.review') }}</option>
                             <option value="{{ config('course.sort_low_to_high') }}"
                                     @if (isset($data['rate']) && $data['rate'] == config('course.sort_low_to_high')) selected @endif>
