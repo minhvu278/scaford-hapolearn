@@ -27,6 +27,7 @@ class RegisterCourseFormRequest extends FormRequest
             'course_id' => 'required|numeric'
         ];
     }
+
     public function messages()
     {
         return [
