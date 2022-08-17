@@ -10,6 +10,7 @@ require('./bootstrap');
 require("slick-carousel");
 require("./customer");
 require('./filter');
+require('./components/upload');
 
 window.Vue = require('vue').default;
 

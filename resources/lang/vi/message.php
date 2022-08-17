@@ -24,5 +24,9 @@ return [
     'create_new_account' => 'Tạo mới tài khỏan',
     'sign_up_to_hapolearn' => 'Đăng nhập HapoLearn',
     'confirm' => 'Xác nhận mật khẩu',
-    'sign_up' => 'Đăng ký'
+    'sign_up' => 'Đăng ký',
+    'string'=> 'Giá trị nhập vào ở định dạng chuỗi',
+    'numeric' => 'Giá trị nhập vào ở định dạng số',
+    'date' => 'Giá trị nhập vào ở định dạng ngày tháng',
+    'image' => 'Giá trị nhập vào phải có định dạng là file ảnh',
 ];
