@@ -38,5 +38,4 @@ class Reply extends Model
     {
         return Carbon::parse($this['created_at'])->format('F j, Y');
     }
-
 }

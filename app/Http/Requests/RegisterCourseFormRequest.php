@@ -35,5 +35,4 @@ class RegisterCourseFormRequest extends FormRequest
             'course_id.numeric' => __('course.course_id_numeric')
         ];
     }
-
 }
