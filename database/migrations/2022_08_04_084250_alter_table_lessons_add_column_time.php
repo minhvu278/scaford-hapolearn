@@ -14,7 +14,7 @@ class AlterTableLessonsAddColumnTime extends Migration
     public function up()
     {
         Schema::table('lessons', function (Blueprint $table) {
-            $table->integer('time')->nullable();
+            $table->time('time')->nullable();
         });
     }
 

@@ -15,6 +15,5 @@ class UserLesson extends Model
     protected $fillable = [
         'user_id',
         'lesson_id',
-        'register_lesson_time'
     ];
 }

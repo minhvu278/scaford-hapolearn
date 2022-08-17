@@ -24,5 +24,11 @@ return [
     'create_new_account' => 'Tạo mới tài khỏan',
     'sign_up_to_hapolearn' => 'Đăng nhập HapoLearn',
     'confirm' => 'Xác nhận mật khẩu',
-    'sign_up' => 'Đăng ký'
+    'sign_up' => 'Đăng ký',
+    'review_fail' => 'Bạn đã vượt quá số lần đánh giá',
+    'review_successful' => 'Cảm ơn bạn đã gửi đánh giá',
+    'edit_review_successful' => 'Sửa bình luận thành công',
+    'delete_review_successful' => 'Xóa bình luận thành công',
+    'reply_review_successful' => 'Trả lời bình luận thành công',
+    'join_course_successful' => 'Tham gia khóa học thành công',
 ];

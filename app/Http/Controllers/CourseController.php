@@ -22,4 +22,16 @@ class CourseController extends Controller
         $tags = Tag::get();
         return view('courses.index', compact('courses', 'teachers', 'tags', 'data'));
     }
+
+    public function show(Request $request, $id)
+    {
+        $data = $request->all();
+        $course = Course::find($id);
+        $otherCourses = Course::other()->get();
+        $lessons = $course->lessons()->search($data)->paginate(config('lesson.paginate'));
+        $tags = $course->tags;
+        $teachers = $course->teachers;
+        $reviews = $course->reviews;
+        return view('courses.show', compact('course', 'otherCourses', 'tags', 'lessons', 'teachers', 'reviews'));
+    }
 }
