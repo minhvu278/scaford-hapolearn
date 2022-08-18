@@ -238,7 +238,6 @@
             @endif
             <div class="review-vote">
                 <div class="vote">Vote</div>
-
                     <div id="rateYo"></div>
                 <div class="name-star">({{ __('course_show.stars') }})</div>
             </div>

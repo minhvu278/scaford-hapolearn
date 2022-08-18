@@ -140,6 +140,11 @@
 }
 
 .btn-hapo {
+  background-color: $main-color;
+  color: white;
+}
+
+.btn-hapo {
   &:hover {
     color: white;
   }

@@ -26,5 +26,6 @@ return [
     'send' => 'Gửi',
     'message' => 'Đánh giá',
     'other_courses' => 'Các khóa học khác',
-    'view_all_courses' => 'Xem tất cả khóa học'
+    'view_all_courses' => 'Xem tất cả khóa học',
+    'review_date' => 'F j, Y',
 ];

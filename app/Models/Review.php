@@ -42,6 +42,6 @@ class Review extends Model
 
     public function getPostedTimeAttribute()
     {
-        return Carbon::parse($this['created_at'])->format('F j, Y');
+        return Carbon::parse($this['created_at'])->format(config('course.review_date'));
     }
 }

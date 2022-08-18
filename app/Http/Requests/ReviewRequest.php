@@ -24,10 +24,10 @@ class ReviewRequest extends FormRequest
     public function rules()
     {
         return [
-            'content' => [
+            'message' => [
                 'required',
             ],
-            'star' => [
+            'rate' => [
                 'required',
             ],
         ];
@@ -36,8 +36,8 @@ class ReviewRequest extends FormRequest
     public function messages()
     {
         return [
-            'content.required' => __('validation.required_review'),
-            'star.required' => __('validation.required_star'),
+            'message.required' => __('validation.required_review'),
+            'rate.required' => __('validation.required_star'),
         ];
     }
 }
