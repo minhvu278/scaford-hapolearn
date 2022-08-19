@@ -43,9 +43,19 @@ class Course extends Model
         return $this->belongsToMany(Tag::class);
     }
 
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
+
     public function scopeMain($query)
     {
         return $query->orderBy('name', config('home.sort_low_to_high'))->limit(config('course.course_number_home'));
+    }
+
+    public function scopeOther($query)
+    {
+        return $query->orderBy('id', config('course.sort_high_to_low'))->take(config('home.review_number_home'));
     }
 
     public function getLearnersAttribute()
@@ -102,5 +112,47 @@ class Course extends Model
         }
 
         return $query;
+    }
+
+    public function getCountStar5Attribute()
+    {
+        return $this->reviews()->where('rate', 5)->count();
+    }
+
+    public function getCountStar4Attribute()
+    {
+        return $this->reviews()->where('rate', 4)->count();
+    }
+
+    public function getCountStar3Attribute()
+    {
+        return $this->reviews()->where('rate', 3)->count();
+    }
+
+    public function getCountStar2Attribute()
+    {
+        return $this->reviews()->where('rate', 2)->count();
+    }
+
+    public function getCountStar1Attribute()
+    {
+        return $this->reviews()->where('rate', 1)->count();
+    }
+
+    public function getAverageStarAttribute()
+    {
+        return round(($this->reviews()->avg('rate')), 1);
+    }
+
+    public function isJoined()
+    {
+        return $this->users()->where('user_id', auth()->id());
+    }
+
+    public function isFinished()
+    {
+        return $this->users()->whereExists(function ($query) {
+            $query->where('user_id', auth()->id());
+        })->where('user_course.deleted_at', '<>', null);
     }
 }

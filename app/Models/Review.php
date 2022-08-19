@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Carbon\Carbon;
 
 class Review extends Model
 {
@@ -32,5 +33,15 @@ class Review extends Model
     public function scopeMain($query)
     {
         return $query->orderBy('parent_id', config('home.sort_high_to_low'))->limit(config('reviews.review_number_home'));
+    }
+
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
+
+    public function getPostedTimeAttribute()
+    {
+        return Carbon::parse($this['created_at'])->format(config('course.review_date'));
     }
 }
