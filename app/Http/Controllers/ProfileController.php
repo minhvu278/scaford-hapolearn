@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileRequest;
+use App\Models\User;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        return view('profile.show');
+        $courses = User::find(auth()->id())->courses;
+        return view('profile.show', compact(['courses']));
     }
 
     public function update(ProfileRequest $request)
