@@ -1,6 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/images/default.jpg": "/images/default.jpg",
     "/images/logo.png": "/images/logo.png",
     "/fonts/utm_bryantlg-webfont.woff": "/fonts/utm_bryantlg-webfont.woff",
     "/fonts/utm_bryantlg-webfont.woff2": "/fonts/utm_bryantlg-webfont.woff2",

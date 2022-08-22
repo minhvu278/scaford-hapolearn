@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReplyController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\UserCourseController;
@@ -20,6 +21,8 @@ use Illuminate\Support\Facades\Auth;
 */
 Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::resource('courses', CourseController::class)->only('index');
+Route::resource('profiles', ProfileController::class)->only('index', 'update');
 Route::resource('courses', CourseController::class)->only(['index', 'show']);
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('reviews', ReviewController::class)->only(['store'])->middleware('canReview');

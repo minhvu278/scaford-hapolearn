@@ -25,5 +25,9 @@ return [
     'create_new_account' => 'Create New Account',
     'sign_up_to_hapolearn' => 'Sign up to HapoLearn',
     'confirm' => 'Confirm Password',
-    'sign_up' => 'Sign up'
+    'sign_up' => 'Sign up',
+    'string' => 'Input characters are in the form of strings',
+    'numeric' => 'Input characters are in the form of numbers',
+    'date' => 'Input value is in date format',
+    'image' => 'The input value must be in the format of an image file',
 ];

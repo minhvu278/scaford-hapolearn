@@ -11,6 +11,7 @@ require("slick-carousel");
 require("./jquery.rateyo.min.js");
 require("./customer");
 require('./filter');
+require('./components/upload');
 require('./rateyo');
 require('./review');
 
