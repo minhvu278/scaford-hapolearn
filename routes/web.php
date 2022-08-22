@@ -1,10 +1,13 @@
 <?php
 
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\LessonController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReplyController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\UserCourseController;
+use App\Http\Controllers\UserLessonController;
+use App\Http\Controllers\UserProgramController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
@@ -29,4 +32,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('reviews', ReviewController::class)->only(['destroy', 'update']);
     Route::resource('replys', ReplyController::class)->only(['store', 'destroy', 'update']);
     Route::resource('user-course', UserCourseController::class)->only(['store', 'destroy', 'update']);
+    Route::resource('lessons', LessonController::class)->only(['show']);
+    Route::resource('user-lesson', UserLessonController::class)->only(['store']);
+    Route::resource('user-program', UserProgramController::class)->only(['store']);
 });

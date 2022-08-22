@@ -28,7 +28,7 @@ class Lesson extends Model
 
     public function users()
     {
-        return $this->belongsToMany(User::class);
+        return $this->belongsToMany(User::class, 'user_lesson', 'lesson_id')->withTimestamps();
     }
 
     public function scopeSearch($query, $data)

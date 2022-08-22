@@ -48,12 +48,17 @@ class User extends Authenticatable
 
     public function lessons()
     {
-        return $this->belongsToMany(Lesson::class);
+        return $this->belongsToMany(Lesson::class, 'user_lesson')->withTimestamps();
     }
 
     public function replies()
     {
         return $this->hasMany(Reply::class);
+    }
+
+    public function programs()
+    {
+        return $this->belongsToMany(Program::class, 'user_program');
     }
 
     public function scopeTeachers($query)
