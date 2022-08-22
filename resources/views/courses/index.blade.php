@@ -105,7 +105,7 @@
                         <div class="info-detail col-9">
                             <div class="course-name">{{ $course->name }}</div>
                             <div class="course-description">{{ Str::limit($course->description),300 }}</div>
-                            <div class="btn btn-detail">More</div>
+                            <div class="btn btn-detail"><a href="{{route('courses.show', [$course->id])}}">More</a></div>
                         </div>
                     </div>
                     <div class="course-statistic row">

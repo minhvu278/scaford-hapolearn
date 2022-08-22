@@ -13,7 +13,6 @@ class Lesson extends Model
     protected $fillable = [
         'course_id',
         'title',
-        'time',
         'description',
     ];
 
@@ -30,5 +29,13 @@ class Lesson extends Model
     public function users()
     {
         return $this->belongsToMany(User::class);
+    }
+
+    public function scopeSearch($query, $data)
+    {
+        if (isset($data['keyword']) && !empty($data['keyword'])) {
+            $query->where('title', 'LIKE', "%{$data['keyword']}%");
+        }
+        return $query;
     }
 }

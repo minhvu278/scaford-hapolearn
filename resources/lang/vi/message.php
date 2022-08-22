@@ -29,4 +29,10 @@ return [
     'numeric' => 'Giá trị nhập vào ở định dạng số',
     'date' => 'Giá trị nhập vào ở định dạng ngày tháng',
     'image' => 'Giá trị nhập vào phải có định dạng là file ảnh',
+    'review_fail' => 'Bạn đã vượt quá số lần đánh giá',
+    'review_successful' => 'Cảm ơn bạn đã gửi đánh giá',
+    'edit_review_successful' => 'Sửa bình luận thành công',
+    'delete_review_successful' => 'Xóa bình luận thành công',
+    'reply_review_successful' => 'Trả lời bình luận thành công',
+    'join_course_successful' => 'Tham gia khóa học thành công',
 ];
