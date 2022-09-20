@@ -21,7 +21,6 @@ use Illuminate\Support\Facades\Auth;
 */
 Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::resource('courses', CourseController::class)->only('index');
 Route::resource('profiles', ProfileController::class)->only('index', 'update');
 Route::resource('courses', CourseController::class)->only(['index', 'show']);
 Route::group(['middleware' => 'auth'], function () {

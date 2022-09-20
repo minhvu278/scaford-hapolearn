@@ -42,14 +42,4 @@ class RegisterFormRequest extends FormRequest
             'alpha_dash' => __('message.space'),
         ];
     }
-
-    public function attributes()
-    {
-        return [
-            'username' => 'Tên tài khoản',
-            'email' => 'Email',
-            'password' => 'Mật khẩu',
-            'password_confirm' => 'Nhập lại mật khẩu',
-        ];
-    }
 }

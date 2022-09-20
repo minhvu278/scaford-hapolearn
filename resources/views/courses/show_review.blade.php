@@ -61,11 +61,10 @@
             </div>
         </div>
         <div class="comment">
-            {{-- <div class="all-review">Show all reviews</div> --}}
             @foreach ($reviews as $review)
                 <div class="user-comment">
                     <div class="user-comment-infor">
-                        <div class="image"><img src="{{ $review->user->avatar }}" alt=""></div>
+                        <div class="image"><img src="{{ asset($review->user->avatar) }}" alt=""></div>
                         <div class="name">{{ $review->user->name }}</div>
                         <div class="vote-star">
                             @php
@@ -165,7 +164,7 @@
                         <div class="rep">
                             <div class="border-bonus-rep"></div>
                             <div class="rep-comment">
-                                <div class="image"><img src="{{ $reply->user->image }}" alt=""></div>
+                                <div class="image"><img src="{{ $reply->user->avatar }}" alt=""></div>
                                 <div class="name">{{ $reply->user->name }}</div>
                                 <div class="time">
                                     {{ $reply->created_time }}
@@ -225,14 +224,14 @@
             @csrf
             <label for="">{{ __('course_show.message') }}</label>
             <br/>
-            <textarea class="review-text @error('content') is-invalid @enderror" name="message" id="content"></textarea>
+            <textarea class="review-text @error('content') is-invalid @enderror" name="mess" id="content"></textarea>
             @error('content')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
             @enderror
             <input type="hidden" name="course_id" value="{{ $course->id }}">
-            <input type="hidden" class="@error('star') is-invalid @enderror" name="rate" id="voteStar">
+            <input type="hidden" class="@error('star') is-invalid @enderror" name="star" id="voteStar">
             @if (Auth::check())
                 <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
             @endif

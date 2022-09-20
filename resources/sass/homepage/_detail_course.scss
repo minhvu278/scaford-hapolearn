@@ -727,3 +727,23 @@
 .invalid-feedback {
   color: red;
 }
+
+.input-search {
+    background: white;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    padding: 7px 30px;
+}
+
+
+.lesson-search-btn {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    padding: 9px 20px;
+    background-color: $main-color;
+    margin-bottom: 3px;
+    margin-left: 5px;
+}

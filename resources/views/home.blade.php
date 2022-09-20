@@ -26,13 +26,13 @@
             @foreach($courses as $course)
             <div class="col-lg-4 col-md-12">
                 <div class="card-main card">
-                    <div class="card-image card-left">
                         <img src="{{ $course->image }}" class="card-img-top" alt="">
-                    </div>
                     <div class="card-body">
                         <p class="card-title">{{ $course->name }}</p>
                         <p class="card-text">{{ Str::limit($course->description, 60) }}</p>
-                        <button class="card-btn">Take This Course</button>
+                        <button class="card-btn">
+                            <a class="btn-take" href="{{route('courses.show', [$course->id])}}">Take This Course</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -49,13 +49,13 @@
             @foreach($courses as $course)
                 <div class="col-lg-4 col-md-12">
                     <div class="card-main card">
-                        <div class="card-image card-left">
                             <img src="{{ $course->image }}" class="card-img-top" alt="">
-                        </div>
                         <div class="card-body">
                             <p class="card-title">{{ $course->name }}</p>
                             <p class="card-text">{{ Str::limit($course->description, 60) }}</p>
-                            <button class="card-btn">Take This Course</button>
+                            <button class="card-btn">
+                                <a class="btn-take" href="{{route('courses.show', [$course->id])}}">Take This Course</a>
+                            </button>
                         </div>
                     </div>
                 </div>
