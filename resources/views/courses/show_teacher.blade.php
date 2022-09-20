@@ -4,7 +4,7 @@
         @foreach ($teachers as $teacher )
             <div class="teacher-detail">
                 <div class="information">
-                    <div class="image"><img src="{{ $teacher->image }}" alt=""></div>
+                    <div class="image"><img src="{{ asset($teacher->image) }}" alt=""></div>
                     <div class="infor-contact">
                         <div class="name">{{ $teacher->name }}</div>
                         <div class="phone">{{ $teacher->phone }}</div>
@@ -16,7 +16,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="descriptions">{{ $teacher->about_me }}</div>
+                <div class="descriptions">{{ $teacher->intro }}</div>
             </div>
         @endforeach
     </div>

@@ -50,7 +50,7 @@ class Course extends Model
 
     public function scopeMain($query)
     {
-        return $query->orderBy('name', config('home.sort_low_to_high'))->limit(config('course.course_number_home'));
+        return $query->orderBy('description', config('home.sort_low_to_high'))->limit(config('course.course_number_home'));
     }
 
     public function scopeOther($query)
@@ -79,10 +79,6 @@ class Course extends Model
             $query->where('name', 'LIKE', '%' . $data['keyword'] . '%')->orWhere('description', 'LIKE', '%' . $data['keyword'] . '%');
         }
 
-        if (isset($data['created_time'])) {
-            $query->orderBy('courses.created_at', config('course.sort_high_to_low'));
-        }
-
         if (isset($data['teachers']) && !empty($data['teachers'])) {
             $query->whereHas('teachers', function ($query) use ($data) {
                 $query->whereIn('user_id', $data['teachers']);
@@ -109,6 +105,10 @@ class Course extends Model
 
         if (isset($data['rate']) && !empty($data['rate'])) {
             $query->withCount('reviews')->orderBy('reviews_count', $data['rate']);
+        }
+
+        if (isset($data['created_time'])) {
+            $query->orderBy('courses.created_at', config('course.sort_high_to_low'));
         }
 
         return $query;

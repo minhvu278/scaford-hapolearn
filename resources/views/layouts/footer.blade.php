@@ -13,13 +13,13 @@
             </div>
             <div class="col-md-2 col-lg-2 text-center mt-md-4 col-xl-2 mx-auto mt-5 mb-4 footer-info">
                 <p>
-                    <a href="#" class="text-reset">Home</a>
+                    <a href="{{ route('home') }}" class="text-reset">Home</a>
                 </p>
                 <p>
                     <a href="#" class="text-reset">Features</a>
                 </p>
                 <p>
-                    <a href="#" class="text-reset">Courses</a>
+                    <a href="{{ route('courses.index') }}" class="text-reset">Courses</a>
                 </p>
                 <p>
                     <a href="#" class="text-reset">Blog</a>

@@ -28,4 +28,5 @@ return [
     'other_courses' => 'Các khóa học khác',
     'view_all_courses' => 'Xem tất cả khóa học',
     'review_date' => 'F j, Y',
+    'course_number_home' => '3'
 ];

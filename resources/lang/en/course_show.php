@@ -2,7 +2,6 @@
 
 return [
     'reviews' => 'Reviews',
-    'join_course' => 'Join course',
     'learning' => 'Learning',
     'not_learning' => 'Not learning',
     'status' => 'Status',

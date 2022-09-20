@@ -3,18 +3,9 @@
         <div class="search">
             <form action="{{ route('courses.show', [$course->id]) }}" method="GET">
                 <div class="form-search row">
-                    <div class="col-8 box-search">
-
-                        <input type="text" class="input-search" name="key_search" placeholder="Search...">
-                        <button type="submit" name="submit" value="Search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-
-                    <div class="col-4">
-                        <button class="btn-search" type="submit" name="submit" value="Search">{{
-                            __('course.search')
-                            }}</button>
+                    <div class="lessons-search">
+                        <input type="text" name="keyword" placeholder="Search..." class="input-search">
+                        <button type="submit" class="lesson-search-btn btn">Search</button>
                     </div>
                 </div>
             </form>

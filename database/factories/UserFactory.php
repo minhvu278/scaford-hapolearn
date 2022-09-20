@@ -29,7 +29,7 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => bcrypt('123456'),
             'remember_token' => Str::random(10),
-            'avatar' => $this->faker->image(),
+            'avatar' => 'https://source.unsplash.com/random',
             'birthday' => $this->faker->date(),
             'phone' => $this->faker->phoneNumber(),
             'address' => $this->faker->address(),

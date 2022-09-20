@@ -56,9 +56,9 @@
   font-weight: 700;
   font-size: 18px;
   color: white;
-  background: red;
+  background: $main-color;
   border-radius: 22px;
-  box-shadow: inset 0 1.5px 2px red;
+  box-shadow: inset 0 1.5px 2px $main-color;
   border: 0;
   margin-bottom: 20px;
 }
@@ -118,3 +118,22 @@
   }
 }
 
+.btn-more {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-more:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.btn-take {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-take:hover {
+    color: gray;
+    text-decoration: none;
+}

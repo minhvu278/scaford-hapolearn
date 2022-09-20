@@ -14,9 +14,9 @@ class CreateAlterUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('avatar')->nullable();
             $table->date('birthday')->nullable();
             $table->string('gender')->nullable();
+            $table->string('avatar')->nullable();
             $table->string('phone')->nullable();
             $table->text('address')->nullable();
             $table->text('intro')->nullable();
